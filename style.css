@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Uncial+Antiqua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('imagens/site/background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #FFFFFF;
+    font-family: 'MedievalSharp', cursive;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: #1A1A40;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.877);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(117, 158, 248, 0.8);
+    max-width: 900px;
+    min-height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.7);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #6495ED;
+    text-shadow: 2px 2px 5px rgba(100, 149, 237, 0.7);
+    margin-bottom: 15px;
+}
+
+.characters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.character-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.character-btn img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #00BFFF;
+    transition: 0.3s ease-in-out;
+}
+
+.character-btn img:hover {
+    transform: scale(1.2);
+    border-color: #8A2BE2;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.8);
+}
+
+.character-btn.selected img {
+    border-color: #3515c4;
+}
+
+#play-button {
+    background-color: #0e0d41c4;
+    color: #ffffff;
+    padding: 15px 32px;
+    font-size: 20px;
+    border: 2px solid #00eeff;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#play-button:hover {
+    background-color: #0c1349;
+    color: #ffffff;
+    border-color: #8A2BE2;
+}
+
+#battle-screen {
+    text-align: center;
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(117, 158, 248, 0.8);
+}
+
+#player-team {
+    margin-top: 20px;
+}
+
+#player-team h3 {
+    font-size: 1.5rem;
+    color: #6495ED;
+    text-shadow: 2px 2px 5px rgba(100, 149, 237, 0.7);
+}
+
+#player-team img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #00BFFF;
+    margin: 0 10px;
+}
+
+#battle-button-container {
+    margin-top: 30px;
+}
+
+#battle-button {
+    background-color: #0e0d41c4;
+    color: #ffffff;
+    padding: 15px 32px;
+    font-size: 20px;
+    border: 2px solid #00eeff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#battle-button:hover {
+    background-color: #0c1349;
+    color: #ffffff;
+    border-color: #8A2BE2;
+}
+
+#computer-team {
+    margin-top: 30px;
+}
+
+#computer-team h3 {
+    font-size: 1.5rem;
+    color: #FF6347;
+    text-shadow: 2px 2px 5px rgba(255, 99, 71, 0.7);
+}
+
+#computer-team img {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    border: 3px solid #00BFFF;
+    margin: 0 10px;
+}
+
+#battle-result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0059ff;
+}
+
+/* ESTILO DO BOTÃO DE RECOMEÇAR JOGO */
+#restart-button {
+    background-color: #0e0d41c4;
+    color: #ffffff;
+    padding: 15px 32px;
+    font-size: 20px;
+    border: 2px solid #00eeff;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#restart-button:hover {
+    background-color: #0c1349;
+    color: #ffffff;
+    border-color: #8A2BE2;
+}
